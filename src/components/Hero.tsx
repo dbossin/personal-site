@@ -13,8 +13,13 @@ h1 {
 }
 
 img {
-    margin-top: 50px;
-    max-width: 500px;
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    @media (max-width: 768px) {
+        max-width: 100%;
+        margin-top: 30px; /* Optional: reduce spacing for smaller screens */
+    }
 }
 `
 
